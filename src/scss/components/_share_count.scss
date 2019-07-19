@@ -1,0 +1,33 @@
+.social-count {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  li {
+    text-align: center;
+    padding: 10px;
+    color: $white-color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    i {
+      font-size: 25px;
+      margin-right: 10px;
+    }
+    span {
+      font-size: 14px;
+    }
+    &.facebook {
+      background-color: $facebook;
+    }
+    &.twitter {
+      background-color: $twitter;
+    }
+    &.linkedin {
+      background-color: $linkedin;
+    }
+    &.instagram {
+      background-color: $instagram;
+    }
+  }
+}

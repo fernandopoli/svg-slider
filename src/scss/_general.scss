@@ -1,0 +1,183 @@
+// GENERAL STYLES
+
+body {
+  @include fontOpenSans(18px, normal, normal);
+  color: $default-color;
+  line-height: 20px;
+  line-height: normal;
+}
+
+h1 {
+  font-size: 1.5em;
+  letter-spacing: 2px;
+  font-weight: 300;
+}
+h2 {
+  font-size: 1.5em;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  line-height: 35px;
+}
+h3 {
+  font-size: 1em;
+  line-height: 27px;
+  font-weight: 300;
+}
+
+p {
+  font-size: 0.85em;
+  font-weight: 500;
+  line-height: 25px;
+  margin-bottom: 20px;
+}
+
+@media only screen and (min-width: 48em) {
+  h1 {
+    font-size: 2em;
+    line-height: 42px;
+  }
+  h2 {
+    font-size: 2em;
+    line-height: 42px;
+  }
+  h3 {
+    font-size: 1.111em;
+    line-height: 35px;
+  }
+  p {
+    font-size: 1em;
+    line-height: 33px;
+    margin-bottom: 35px;
+  }
+}
+
+.image-responsive {
+  width: 100%;
+  height: auto;
+}
+
+// ANCHOR
+a {
+  text-decoration: none;
+  @include transition(all, 300ms, ease);
+  &:hover {
+    @include transition(all, 300ms, ease);
+    text-decoration: none;
+  }
+}
+
+// TEXT COLOR VARIATIONS
+
+.text-white {
+  color: $white-color;
+}
+
+.text-black {
+  color: $black-color;
+}
+
+/* TEXT ALIGN */
+
+.text-xs-left {
+  text-align: left;
+}
+.text-xs-center {
+  text-align: center;
+}
+.text-xs-right {
+  text-align: right;
+}
+@media only screen and (min-width: 48em) {
+  .text-md-left {
+    text-align: left;
+  }
+  .text-md-center {
+    text-align: center;
+  }
+  .text-md-right {
+    text-align: right;
+  }
+}
+@media only screen and (min-width: 64em) {
+  .text-lg-left {
+    text-align: left;
+  }
+  .text-lg-center {
+    text-align: center;
+  }
+  .text-lg-right {
+    text-align: right;
+  }
+}
+
+// TEXT VARIATION
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+// MARGIN & PADDING
+$mobile-gutter: 5px;
+$desktop-gutter: 10px;
+
+@for $i from 0 through 15 {
+  // Padding
+  .pt-xs-#{$i} {
+    padding-top: $i * $mobile-gutter;
+  }
+  .pr-xs-#{$i} {
+    padding-right: $i * $mobile-gutter;
+  }
+  .pb-xs-#{$i} {
+    padding-bottom: $i * $mobile-gutter;
+  }
+  .pl-xs-#{$i} {
+    padding-left: $i * $mobile-gutter;
+  }
+
+  // Margin
+  .mt-xs-#{$i} {
+    margin-top: $i * $mobile-gutter;
+  }
+  .mr-xs-#{$i} {
+    margin-right: $i * $mobile-gutter;
+  }
+  .mb-xs-#{$i} {
+    margin-bottom: $i * $mobile-gutter;
+  }
+  .ml-xs-#{$i} {
+    margin-left: $i * $mobile-gutter;
+  }
+}
+
+@media only screen and (min-width: 48em) {
+  // MARGIN & PADDING
+  @for $i from 0 through 15 {
+    // Padding
+    .pt-lg-#{$i} {
+      padding-top: $i * $desktop-gutter;
+    }
+    .pr-lg-#{$i} {
+      padding-right: $i * $desktop-gutter;
+    }
+    .pb-lg-#{$i} {
+      padding-bottom: $i * $desktop-gutter;
+    }
+    .pl-lg-#{$i} {
+      padding-left: $i * $desktop-gutter;
+    }
+
+    // Margin
+    .mt-lg-#{$i} {
+      margin-top: $i * $desktop-gutter;
+    }
+    .mr-lg-#{$i} {
+      margin-right: $i * $desktop-gutter;
+    }
+    .mb-lg-#{$i} {
+      margin-bottom: $i * $desktop-gutter;
+    }
+    .ml-lg-#{$i} {
+      margin-left: $i * $desktop-gutter;
+    }
+  }
+}

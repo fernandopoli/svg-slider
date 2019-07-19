@@ -1,0 +1,62 @@
+<svg
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              viewBox="0 0 955 495"
+            >
+              <filter id="dropshadow" height="130%">
+                <feGaussianBlur in="SourceAlpha" stdDeviation="30" />
+                <!-- stdDeviation is how much to blur -->
+                <feOffset dx="0" dy="0" result="offsetblur" />
+                <!-- how much to offset -->
+                <feComponentTransfer>
+                  <feFuncA type="linear" slope="0.5" />
+                  <!-- slope is the opacity of the shadow -->
+                </feComponentTransfer>
+                <feMerge>
+                  <feMergeNode />
+                  <!-- this contains the offset blurred image -->
+                  <feMergeNode in="SourceGraphic" />
+                  <!-- this contains the element that the filter is applied to -->
+                </feMerge>
+              </filter>
+              <g style="filter:url(#dropshadow); transform: translateX(-10px);">
+                <defs>
+                  <path id="a" d="M390 405H39V40h561z" />
+                </defs>
+                <clipPath id="b">
+                  <use xlink:href="#a" overflow="visible" />
+                </clipPath>
+                <defs>
+                  <path id="c" d="M938 454H380L591 88.9h347z" />
+                </defs>
+                <clipPath id="d">
+                  <use xlink:href="#c" overflow="visible" />
+                </clipPath>
+                <g clip-path="url(#b)">
+                  <image
+                    width="654"
+                    height="365"
+                    xlink:href="assets/slider-01-01.jpg"
+                    transform="translate(39 40.002)"
+                    overflow="visible"
+                  />
+                </g>
+                <g clip-path="url(#d)">
+                  <image
+                    width="620"
+                    height="620"
+                    xlink:href="assets/slider-01-02.jpg"
+                    transform="translate(356.997 -136.004)"
+                    overflow="visible"
+                  />
+                </g>
+              </g>
+            </svg>					
+						<image style="overflow:visible;" width="620" height="620" xlink:href="slider-01-02.jpg"  transform="matrix(1 0 0 1 356.9969 -136.0044)">
+					</image>
+				</g>
+			</g>
+		</g>
+	</g>
+</g>
+</svg>

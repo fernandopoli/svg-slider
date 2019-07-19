@@ -1,5 +1,18 @@
-@import "settings";
+// RESET PAGES
+@import "reset";
 
-body {
-    background-color: $color-bg;
-}
+// VARIABLES
+@import "variables";
+
+// MIXINS
+@import "mixins";
+
+// GENERAL
+@import "general";
+
+// LAYOUT
+@import "layouts";
+
+// COMPONENTS
+@import "components/slider";
+@import "components/share_count";

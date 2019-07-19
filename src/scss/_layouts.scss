@@ -1,0 +1,30 @@
+// LAYOUTS
+
+.container {
+  max-width: 955px;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+// Image Overlay
+.image-overlay-wrapper {
+  img {
+    display: block;
+  }
+  position: relative;
+  &:before {
+    content: "";
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    @include linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.15) 0%,
+      rgba(21, 21, 21, 0.8) 100%
+    );
+  }
+}

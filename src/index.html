@@ -1,16 +1,265 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <meta charset="utf-8">
-    <title>Gulp Starter Kit</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Challenge - Making Sense</title>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://makingsense.com/favicon.ico"
+    />
     <!-- build:css -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css" />
     <!-- endbuild -->
+    <!-- external icon -->
+    <script src="https://kit.fontawesome.com/d962f14c9f.js"></script>
+    <!-- end external icon -->
   </head>
   <body>
-    <h1>Gulp starter kit</h1>
+    <div id="main" class="mb-xs-10">
+      <!-- START SLIDER -->
+      <section
+        class="slider-section mb-lg-8 mb-xs-8 pb-xs-10 pb-lg-10 pt-xs-10 pt-lg-15"
+      >
+        <div class="container">
+          <h1 class="text-xs-center text-white mb-xs-3 mb-lg-3">
+            UX CHALLENGE
+          </h1>
+          <div class="slider-wrapper">
+            <!-- SVG SLIDER -->
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              viewBox="0 0 955 495"
+              class="mb-xs-5"
+            >
+              <filter id="dropshadow" height="130%">
+                <feGaussianBlur in="SourceAlpha" stdDeviation="15" />
+                <!-- stdDeviation is how much to blur -->
+                <feOffset dx="0" dy="0" result="offsetblur" />
+                <!-- how much to offset -->
+                <feComponentTransfer>
+                  <feFuncA type="linear" slope="0.5" />
+                  <!-- slope is the opacity of the shadow -->
+                </feComponentTransfer>
+                <feMerge>
+                  <feMergeNode />
+                  <!-- this contains the offset blurred image -->
+                  <feMergeNode in="SourceGraphic" />
+                  <!-- this contains the element that the filter is applied to -->
+                </feMerge>
+              </filter>
+              <g style="filter:url(#dropshadow); transform: translateX(-10px);">
+                <defs>
+                  <path id="a" d="M390 405H39V40h561z" />
+                </defs>
+                <clipPath id="b">
+                  <use xlink:href="#a" overflow="visible" />
+                </clipPath>
+                <defs>
+                  <path id="c" d="M938 454H380L591 88.9h347z" />
+                </defs>
+                <clipPath id="d">
+                  <use xlink:href="#c" overflow="visible" />
+                </clipPath>
+                <g class="slider-image-container move">
+                  <g clip-path="url(#b)" class="slider-image-wrapper">
+                    <image
+                      width="654"
+                      height="365"
+                      xlink:href="assets/slider-01-01.jpg"
+                      transform="translate(39 40.002)"
+                      overflow="visible"
+                      data-img="gravity-black"
+                      class="active"
+                    />
+                    <image
+                      width="654"
+                      height="365"
+                      xlink:href="assets/slider-02-01.jpg"
+                      transform="translate(39 40.002)"
+                      overflow="visible"
+                      data-img="classic-brow"
+                    />
+                  </g>
+                  <g clip-path="url(#d)" class="slider-image-wrapper">
+                    <image
+                      width="620"
+                      height="620"
+                      xlink:href="assets/slider-01-02.jpg"
+                      transform="translate(356.997 -136.004)"
+                      overflow="visible"
+                      data-img="gravity-black"
+                      class="active"
+                    />
+                    <image
+                      width="620"
+                      height="620"
+                      xlink:href="assets/slider-02-02.jpg"
+                      transform="translate(356.997 -136.004)"
+                      overflow="visible"
+                      data-img="classic-brow"
+                    />
+                  </g>
+                </g>
+              </g>
+            </svg>
+            <!--Shopping Button-->
+            <ul class="shopping-button">
+              <li class="active">
+                <a
+                  href="#"
+                  class="btn-cart"
+                  title="$269 BUY"
+                  data-link="gravity-black"
+                  >$ 269 BUY</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="btn-cart"
+                  title="$350 BUY"
+                  data-link="classic-brow"
+                  >$ 350 BUY</a
+                >
+              </li>
+            </ul>
+            <!--endsShopping Button-->
+            <!--More Details Button-->
+            <ul class="details-button">
+              <li class="active">
+                <a
+                  href="#"
+                  class="text-details"
+                  title="Details"
+                  data-link="gravity-black"
+                  >DETAILS</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-details"
+                  title="Details"
+                  data-link="classic-brow"
+                  >DETAILS</a
+                >
+              </li>
+            </ul>
+            <!--endsMore Details Button-->
+            <!--Buttons-->
+            <ul class="slider-button">
+              <li class="active">
+                <a
+                  href="#"
+                  data-link="gravity-black"
+                  class="text-uppercase"
+                  title="Gravity Black"
+                >
+                  Gravity Black
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  data-link="classic-brow"
+                  class="text-uppercase"
+                  title="Classic Brown"
+                >
+                  Classic Brown
+                </a>
+              </li>
+            </ul>
+            <!--endButtons-->
+            <!--Dots-->
+            <ul class="slider-dots">
+              <li class="active">
+                <a href="#" data-link="gravity-black" title="Gravity Black">
+                </a>
+              </li>
+              <li>
+                <a href="#" data-link="classic-brow" title="Classic Brown"> </a>
+              </li>
+            </ul>
+            <!--endDots-->
+            <!-- END SVG SLIDER -->
+          </div>
+        </div>
+      </section>
+      <!-- END SLIDER -->
+      <!-- START ARTICLE -->
+      <div class="container pr-xs-4 pl-xs-4">
+        <h2 class="text-xs-center mb-lg-6 mb-xs-6">
+          Meet our Head of HR:<br />Adventurer without limits
+        </h2>
+        <h3
+          class="text-xs-center mb-lg-7 mb-xs-7 pl-xs-0 pr-xs-0 pl-lg-11 pr-lg-11"
+        >
+          This installment of Meet the Making Senser focuses on Gabriel Buyatti.
+          Read how he manages to fulfill a critical role and the interests that
+          drive him, followed by an introspective self-analysis.
+        </h3>
+        <div class="image-overlay-wrapper mb-lg-5 mb-xs-5">
+          <img
+            src="assets/making-sense-image.jpg"
+            class="image-responsive"
+            alt="Picture Description"
+          />
+        </div>
+        <p>
+          Once again we’re tapping into our company resources with another
+          teammate interview. Today it’s Nazareno Oviedo’s turn, so we asked him
+          all about his role as an UX Developer at Making Sense. To begin, a few
+          basics: he’s from Mar del Plata, and he’s a lover of tango and
+          National music. He plays the piano and the guitar and he’s curious
+          about learning new things every day.
+        </p>
+        <p>
+          As for his professional life, Nazareno graduated from Universidad
+          Nacional Tecnológica when he was 25 years old. Currently, he’s part of
+          the UX/UI team for one of our partners’ projects.
+        </p>
+        <p>
+          Once again we’re tapping into our company resources with another
+          teammate interview. Today it’s Nazareno Oviedo’s turn, so we asked him
+          all about his role as an UX Developer at Making Sense. To begin, a few
+          basics: he’s from Mar del Plata, and he’s a lover of tango and
+          National music. He plays the piano and the guitar and he’s curious
+          about learning new things every day.
+        </p>
+        <p>
+          As for his professional life, Nazareno graduated from Universidad
+          Nacional Tecnológica when he was 25 years old. Currently, he’s part of
+          the UX/UI team for one of our partners’ projects.
+        </p>
+      </div>
+      <!-- END SLIDER -->
+      <div class="container pr-xs-4 pl-xs-4">
+        <!-- START SHARE COUNT -->
+        <ul class="social-count">
+          <li class="facebook">
+            <i class="fab fa-facebook-square"></i> <span id="facebook"></span>
+          </li>
+          <li class="twitter">
+            <i class="fab fa-twitter-square"></i> <span id="comments"></span>
+          </li>
+          <li class="linkedin">
+            <i class="fab fa-linkedin"></i> <span id="linkedin"></span>
+          </li>
+          <li class="instagram">
+            <i class="fab fa-instagram"></i> <span id="stumbles"></span>
+          </li>
+        </ul>
+        <!-- END START SHARE COUNT -->
+      </div>
+    </div>
+
     <!-- build:js -->
-    <script src="js/plugins.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/slider.js"></script>
     <script src="js/script.js"></script>
     <!-- endbuild  -->
   </body>
