@@ -10,7 +10,6 @@ function autoPlaySlider() {
       counter += 1;
     }
     $('.slider-dots li:eq("' + counter + '") a').click();
-    console.log(counter);
   }, 8000);
 }
 
